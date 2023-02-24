@@ -31,10 +31,10 @@ The script expects the following folder structure:
 ```
 /
 |-- src/
-| |-- etl.py
-| |-- db_helper.py
 | |-- main.py
-| |-- logger.py
+| | |-- etl.py
+| | |-- db_helper.py
+| | |-- logger.py
 |-- data/
 | |-- unprocessed/
 | |-- processed/
@@ -50,7 +50,7 @@ To use the script, do the following:
 
 2. Place CSV files to be processed in the `unprocessed` folder located in the `data` folder.
 
-3. Run the `main.py` script.
+3. Run the `main.py` script located in `src` folder.
 
 4. The script will extract data from the CSV files, transform the data, load the data into the SQLite database, and move processed files to the `processed` folder located in the `data` folder.
 

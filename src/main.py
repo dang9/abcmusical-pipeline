@@ -4,36 +4,56 @@ from lib.logger import setup_logging
 import os
 
 def main():
+    """
+    The main function of the ETL pipeline for the ABC Musical Data Warehouse project.
+
+    This function extracts data from CSV files in a specified directory, transforms the data,
+    creates dimension and fact tables, and loads the data into a SQLite database.
+
+    Returns:
+        None
+    """
+    # Set up logging
     setup_logging()
-    print(os.getcwd())
+
+    # Set the path to the SQLite database
     database = r".\output\abcmusicaldwh.db"
 
+    # Create a connection to the database
     create_connection(database)
 
+    # Create the necessary tables in the database
     create_tables_in_db(database, r".\model\create_tables.sql")
 
+    # Get a list of CSV files to process
     files = get_csv_files_for_processing(r".\data\unprocessed")
 
+    # Extract data from all CSV files
     raw_df = extract_all_files(files)
 
+    # Transform the data
     transformed_df = transform_data(raw_df)
 
-    # create dimensions
+    # Create dimension tables
     dim_client_df = create_dimension_client(transformed_df)
     dim_payment_df = create_dimension_payment(transformed_df)
     dim_product_df = create_dimension_product(transformed_df)
 
+    # Convert the PaymentDate column to a string
     dim_payment_df["PaymentDate"] = dim_payment_df["PaymentDate"].astype(str)
 
+    # Load the dimension tables into the database
     load_data_clients(database, dim_client_df)
     load_data_payments(database, dim_payment_df)
     load_data_products(database, dim_product_df)
 
-    # create facts
+    # Create the fact table with foreign keys to dimension tables
     fact_orders_df = create_fact_orders(database, transformed_df)
 
+    # Load the fact table into the database
     load_data_orders(database, fact_orders_df)
 
+    # Move processed files to the processed folder
     move_processed_files(r".\data\unprocessed", r".\data\processed",)
 
 

@@ -54,4 +54,4 @@ To use the script, do the following:
 
 4. The script will extract data from the CSV files, transform the data, load the data into the SQLite database, and move processed files to the `processed` folder located in the `data` folder.
 
-Note: The script assumes that you have installed the necessary dependencies, which include `pandas`, `numpy`, `pendulum`, and `sqlite3`.
+Note: The script assumes that you have installed the necessary dependencies, which include `pandas`, `numpy`, `pendulum`, `pytest` and `sqlite3`.

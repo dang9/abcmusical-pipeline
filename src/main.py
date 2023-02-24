@@ -2,6 +2,7 @@ from lib.etl import get_csv_files_for_processing, extract_all_files, extract_fil
 from lib.db_helper import create_connection, create_tables_in_db, load_data_clients, load_data_payments, load_data_products, load_data_orders
 from lib.logger import setup_logging
 import os
+import logging
 
 def main():
     """
@@ -27,6 +28,11 @@ def main():
 
     # Get a list of CSV files to process
     files = get_csv_files_for_processing(r".\data\unprocessed")
+
+    # exit if no files exist to process
+    if len(files) == 0:
+        logging.error("No files to process, please place files in data/unprocessed", exc_info=True)
+        exit()
 
     # Extract data from all CSV files
     raw_df = extract_all_files(files)

@@ -24,7 +24,7 @@ def get_csv_files_for_processing(folder_path: str) -> List[Path]:
     except Exception as e:
         logging.error(f"Error while getting CSV files: {e}", exc_info=True)
         return []
-
+    
 
 def extract_file(file_path: Path) -> pd.DataFrame:
     """Extract data from a CSV file.

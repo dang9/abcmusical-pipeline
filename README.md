@@ -32,6 +32,7 @@ The script expects the following folder structure:
 /
 |-- src/
 | |-- main.py
+| |-- lib/
 | | |-- etl.py
 | | |-- db_helper.py
 | | |-- logger.py
@@ -41,6 +42,8 @@ The script expects the following folder structure:
 | | |-- data.csv
 |-- tests/
 | |-- test_etl.py
+|-- model/
+| |-- create_tables.sql
 ```
 
 

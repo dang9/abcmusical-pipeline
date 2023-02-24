@@ -1,0 +1,11 @@
+OrderNumber,ClientName,ProductName,ProductType,UnitPrice,ProductQuantity,TotalPrice,Currency,DeliveryAddress,DeliveryCity,DeliveryPostcode,DeliveryCountry,DeliveryContactNumber,PaymentType,PaymentBillingCode,PaymentDate
+PO1243023-2,ABC Company,Smartwatch,Electronics,350,2,700,USD,123 Main St,New York,10001,United States,(212) 555-1212,Credit,PO1243023-20230401,04/01/2023
+PO9023845-3,XYZ LLC,Office Chair,Furniture,150,5,750,CAD,456 Maple Ave,Toronto,M5V 2B5,Canada,(416) 555-1212,Debit,PO9023845-20230228,02/28/2023
+PO2857349-4,Acme Corporation,Laptop,Computers,1300,1,1300,EUR,789 Rue de la Paix,Paris,75008,France,33 6 12 34 56 78,PayPal,PO2857349-20230315,03/15/2023
+PO3729347-5,Beta Industries,Smartphone,Electronics,900,2,1800,GBP,111 High St,London,E1 7PT,United Kingdom,44 20 5555 5555,Credit,PO3729347-20230310,03/10/2023
+PO9237482-6,Gamma Corp,Desk Lamp,Lighting,50,10,500,USD,987 Elm St,Los Angeles,90017,,(323) 555-1212,Debit,PO9237482-20230415,04/15/2023
+PO5468273-7,Delta Enterprises,Bluetooth Speaker,Electronics,100,3,300,CAD,654 Queen St,Toronto,M4W 1J3,Canada,(416) 555-1212,PayPal,PO5468273-20230227,02/27/2023
+PO1287564-8,Epsilon Corp,Desk,Office Furniture,500,1,500,USD,789 Fifth Ave,New York,10019,United States,(212) 555-1212,Credit,PO1287564-20230305,03/05/2023
+PO8472915-9,Zeta Enterprises,Headphones,Electronics,200,4,800,EUR,456 Berliner Strasse,Berlin,10115,Germany,49 30 1234567,Debit,PO8472915-20230322,03/22/2023
+PO2387459-10,Theta Industries,Printer,Office Equipment,300,1,300,GBP,222 Oxford St,London,W1D 1LA,United Kingdom,44 20 5555 5555,PayPal,PO2387459-20230325,03/25/2023
+PO5892314-11,Iota Corp,Chair,Office Furniture,100,8,800,CAD,123 Main St,Montreal,H3Z 2Y7,Canada,(514) 555-1212,Credit,PO5892314-20230312,03/12/2023

@@ -1,0 +1,3 @@
+OrderNumber,ClientName,ProductName,ProductType,UnitPrice,ProductQuantity,TotalPrice,Currency,DeliveryAddress,DeliveryCity,DeliveryPostcode,DeliveryCountry,DeliveryContactNumber,PaymentType,PaymentBillingCode,PaymentDate
+PO0060504-1,MacGyver Inc,Piano,Mechanical Keyboard4,4700,3,14100,GBP,22 Rosewood Avenue,Bristol,BS2 8HT,United Kingdom,077009008,Debit,PO0060504-20210321,21/03/2021
+PO0060504-2,Howell LLC,Bamboo Flute,Woodwind,60,1,60,GBP,25 Durham Road,Liverpool,L8 5TU,UNITED KINGDOM,077007007,Credit,PO0087294-20210317,17/03/2021

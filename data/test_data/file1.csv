@@ -1,0 +1,4 @@
+OrderNumber,ClientName,ProductName,ProductType,UnitPrice,ProductQuantity,TotalPrice,Currency,DeliveryAddress,DeliveryCity,DeliveryPostcode,DeliveryCountry,DeliveryContactNumber
+1001,John Smith,Widget A,Small,1.99,10,19.9,USD,123 Main St,Anytown,12345,USA,123-456-7890
+1002,Mary Brown,Widget B,Medium,2.99,20,59.8,USD,456 Elm St,Otherville,67890,USA,987-654-3210
+1003,Bob Johnson,Widget C,Large,3.99,30,119.7,USD,789 Oak St,Myville,24680,USA,555-1212

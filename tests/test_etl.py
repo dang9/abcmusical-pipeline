@@ -5,13 +5,13 @@ import numpy as np
 from src.lib.etl import get_csv_files_for_processing, extract_file, transform_data, create_dimension_client, create_dimension_payment, create_dimension_product, create_fact_orders
 
 def test_get_csv_files_for_processing():
-    folder_path = "./test_data/"
+    folder_path = "./data/test_data/"
     expected_files = ["file1.csv", "file2.csv"]
     files = get_csv_files_for_processing(folder_path)
     assert [str(f.stem)+f.suffix for f in files] == expected_files
     
 def test_extract_file():
-    file_path = "./test_data/file1.csv"
+    file_path = "./data/test_data/file1.csv"
     expected_df = pd.DataFrame({
         "OrderNumber": ["1001", "1002", "1003"],
         "ClientName": ["John Smith", "Mary Brown", "Bob Johnson"],
